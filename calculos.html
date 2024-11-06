@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Operaciones</h1>
+        <div id="p1">resultado</div>
+        <script>
+            function calcularExpresion(t) {
+                let r=(1/2)*Math.exp(2*t)-3.8*Math.pow(t,3);
+                return r.toFixed(2);
+            }
+            let t=prompt("Introducir valor de t");
+            let r=calcularExpresion(parseFloat(t))
+            document.getElementById("p1").innerHTML="resultado es: "+r;
+    </script>
+    </body>
+</html>
